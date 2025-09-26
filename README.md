@@ -11,6 +11,8 @@ What I Implemented
 	•	Nested Flexbox → I used flexbox inside sections like the header, sidebar, and video info to align icons, text, and buttons.
 	•	Positioning (absolute & relative) → I positioned elements like the header, sidebar, and video timestamps to overlay correctly and stay fixed when scrolling.
 	•	Hover Effects & Tooltips → I added hover states for sidebar links, buttons, and tooltips to give the design an interactive feel.
+![Screenshot](hover.png)
+
 	•	Consistent Styling → I styled elements with the Roboto font, consistent spacing, and color palette to mimic the YouTube UI.
 
 ⸻
@@ -19,9 +21,6 @@ Project Structure
 
 	•	youtube.html → The main HTML page
 	•	header.css → Styles for the top navigation bar and search bar
-
-![Screenshot](hover.png)
-	
 	•	sidebar.css → Styles for the fixed sidebar navigation
 	•	video.css → Styles for video thumbnails, grid layout, and responsiveness
 	•	general.css → Base styles and global resets
