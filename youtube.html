@@ -1,0 +1,386 @@
+<!--Youtube Page Recreation Project-->
+<!DOCTYPE html>
+<html>
+  <head>
+     <title> Youtube Homepage </title>
+     <!--Linking all CSS files-->
+     <link rel="stylesheet" href="styles/general.css">
+     <link rel="stylesheet" href="styles/header.css">
+     <link rel="stylesheet" href="styles/video.css">
+     <link rel="stylesheet" href="styles/sidebar.css">
+   </head>
+      <body>
+
+        <!--Header of page-->
+        <header class="header">
+          <div class="left-section">
+            <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+            <img class="youtube-logo" src="icons/youtube-logo.svg">
+          </div>
+          <div class="middle-section">
+              <!--Void element for creating a text box with placeholder-->
+          <input class="search-bar" type="text" placeholder="Search">
+          <button class="search-button">
+            <img class="search-icon" src="icons/search.svg">
+            <div class="tooltip">Search</div>
+          </button>
+          <button class="voice-button">
+            <img class="voice-icon" src="icons/voice-search-icon.svg">
+            <div class="tooltip">Search with your voice</div>
+          </button>
+          </div>
+          <div class="right-section">
+            <button class="upload-button">
+              <img class="upload-icon" src="icons/upload.svg">
+              <div class="tooltip">Create</div>
+            </button>
+            <button class="apps-button">
+              <img class="apps-icon" src="icons/youtube-apps.svg">
+              <div class="tooltip">Youtube Apps</div>
+            </button>
+            <button class="notifications-button">
+              <div class="notifications-icon-container">
+              <img class="upload-icon" src="icons/notifications.svg">
+              <div class="tooltip">Notifications</div>
+              <div class="notifications-count">3</div>
+          </div>
+            </button>
+          <img class="user-icon" src="pfp/user.png">
+          </div>
+        </header>
+
+
+        <!--Sidebar!-->
+        <nav class="sidebar">
+          <div class="sidebar-link">
+            <img class="sidebar-icon" src="icons/home.svg">
+            <div class="sidebar-text">Home</div>
+          </div>
+          <div class="sidebar-link">
+            <img class="sidebar-icon" src="icons/explore.svg">
+            <div class="sidebar-text">Explore</div>
+          </div>
+          <div class="sidebar-link">
+            <img class="sidebar-icon" src="icons/subscriptions.svg">
+            <div class="sidebar-text">Subscriptions</div>
+          </div>
+          <div class="sidebar-link">
+            <img class="sidebar-icon" src="icons/originals.svg">
+            <div class="sidebar-text">Originals</div>
+          </div>
+          <div class="sidebar-link">
+            <img class="sidebar-icon" src="icons/youtube-music.svg">
+            <div class="sidebar-text">YouTube Music</div>
+          </div>
+          <div class="sidebar-link">
+            <img class="sidebar-icon" src="icons/library.svg">
+            <div class="sidebar-text">Library</div>
+          </div>
+        </nav>
+
+      <main>
+        <!--Grid Container-->
+        <section class="video-grid">
+
+          <!--First video-->
+          <!--Creating verticle layouts -->
+          <div class="video-preview">
+            <!-- First verticle layout:-->
+            <div class="thumbnail-row">
+                <!--void element for images - takes one element SRC-->
+              <img class="thumbnail" src="thumbnails/thumbnail-1.png">
+              <div class="video-time">17:35</div>
+            </div>
+
+
+          <!--Second verticle layout has everything else in it-->
+          <div class="video-info-grid">
+            <!--First horizonal layout-->
+            <div class="pfp-layout">
+              <img class="pfp" src="pfp/antvenom.png">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Ant Farm Survival - Ep. 1 - Trapped in My Own Land!
+              </p>
+
+              <p class="video-author">
+                AntVenom
+              </p>
+
+              <p class="video-stats">
+                1.7M views · 13 years ago
+              </p>
+            </div>
+          </div>
+          </div>
+
+          <!--Second video-->
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-2.png">
+              <div class="video-time">8:22</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="pfp-layout">
+                <img class="pfp" src="pfp/markiplier.png">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  Try not to laugh Challenge #9
+                </p>
+
+                <p class="video-author">
+                  Markiplier
+                </p>
+
+                <p class="video-stats">
+                  19M views · 4 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+        
+          <!--Third Video-->
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-3.png">
+              <div class="video-time">29:47</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="pfp-layout">
+                <img class="pfp" src="pfp/pewdiepie.png">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  0.000578% Chance Among Us Impostor - Among Us #11
+                </p>
+                <p class="video-author">
+                  PewDiePie
+                </p>
+                <p class="video-stats">
+                  11M views · 4 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Fourth Video-->
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-4.png">
+              <div class="video-time">1:35</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="pfp-layout">
+                <img class="pfp" src="pfp/gamespot.png">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  Stray Gameplay Trailer | Sony State of Play June 2022
+                </p>
+                <p class="video-author">
+                  Gamespot
+                </p>
+                <p class="video-stats">
+                  2.7M views · 3 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Fifth Video-->
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-5.png">
+              <div class="video-time">3:30</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="pfp-layout">
+                <img class="pfp" src="pfp/smosh.png">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  STOP COPYING ME!
+                </p>
+                <p class="video-author">
+                  Smosh
+                </p>
+                <p class="video-stats">
+                  32M views · 12 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Sixth Video-->
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-6.png">
+              <div class="video-time">29:14</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="pfp-layout">
+                <img class="pfp" src="pfp/markiplier.png">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  Five Nights at Freddy's: Sister Location - Part 1
+                </p>
+                <p class="video-author">
+                  Markiplier
+                </p>
+                <p class="video-stats">
+                  58M views · 8 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Seventh Video-->
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-7.png">
+              <div class="video-time">11:22</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="pfp-layout">
+                <img class="pfp" src="pfp/gamespot.png">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  Joe And Frank Get Mad While Playing Who Can Answer First!
+                </p>
+                <p class="video-author">
+                  Gamespot
+                </p>
+                <p class="video-stats">
+                  1.8M views · 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Eighth Video-->
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-8.png">
+              <div class="video-time">3:17</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="pfp-layout">
+                <img class="pfp" src="pfp/blazor26.png">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  Epic Dragon Scene Game of Thrones Season 3 Daenerys Targaryen Rise to Power (Part 1) (HD)
+                </p>
+                <p class="video-author">
+                  Blazor26 (Blake Ezor)
+                </p>
+                <p class="video-stats">
+                  29M views · 12 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Ninth Video-->
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-9.png">
+              <div class="video-time">1:54:39</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="pfp-layout">
+                <img class="pfp" src="pfp/evbo.png">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  Minecraft but I survive in PARKOUR CIVILIZATION [FULL MOVIE]
+                </p>
+                <p class="video-author">
+                  Evbo
+                </p>
+                <p class="video-stats">
+                  43M views · 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Tenth Video-->
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-10.png">
+              <div class="video-time">15:10</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="pfp-layout">
+                <img class="pfp" src="pfp/marvel.png">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  The Avengers | Behind the scenes
+                </p>
+                <p class="video-author">
+                  Marvel Studios Movies
+                </p>
+                <p class="video-stats">
+                  2.5M views · 6 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Eleventh Video-->
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-11.png">
+              <div class="video-time">3:25</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="pfp-layout">
+                <img class="pfp" src="pfp/dhmis.png">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  Don't Hug me I'm Scared
+                </p>
+                <p class="video-author">
+                  Don't Hug Me I'm Scared
+                </p>
+                <p class="video-stats">
+                  3.4M views · 14 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Twelfth Video-->
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-12.png">
+              <div class="video-time">1:00:23</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="pfp-layout">
+                <img class="pfp" src="pfp/2idiots.png">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  2 Idiots 100% Terraria | Full Movie
+                </p>
+                <p class="video-author">
+                  2 Idiots
+                </p>
+                <p class="video-stats">
+                  1.4M views · 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </body>
+  </html>

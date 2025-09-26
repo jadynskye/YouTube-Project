@@ -1,0 +1,14 @@
+/* All paragraphs */
+  p{
+    font-family: Roboto, Arial;
+    /*getting rid of default spacing*/
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+
+/* Resetting all margins */
+ body{
+  margin: 0;
+  padding-top: 60px;
+  padding-left: 62px;
+ }

@@ -1,0 +1,108 @@
+
+        /* All thumbnail cover photos */
+        .thumbnail{
+          /* Set width to 100% so it takes up all the space in its container*/
+          width: 100%;
+        }
+
+        .thumbnail-row{
+          margin-bottom: 12px;
+          position: relative;
+        }
+
+        .video-time{
+          font-family: Roboto, Arial;
+          font-weight: 500;
+          /*First value is top/bottom second value left/right
+          could also do 4 values in one, goes top - right - bottom - left*/
+          padding: 4px 5px;
+          border-radius: 2px;
+          position: absolute;
+          background-color: black;
+          color: white;
+          font-size: 12px;
+          bottom: 12px;
+          right: 10px;
+
+        }
+
+        /* Video info layout  */
+        .video-info-grid{
+          display: grid;
+          grid-template-columns: 50px 1fr;
+        }
+
+        /* Round profile photo */
+        .pfp{
+          width: 80%;
+          height: auto;
+          border-radius: 20px;
+          margin-top: 10px;
+        }
+
+        /* Video title (top) */
+        .video-title{
+          font-weight: 520;
+          vertical-align: 0;
+          margin-left: -5px;
+          width: 200px;
+          font-size: 14px;
+          /*space between the lines*/
+          line-height: 18px;
+          margin-bottom: 12px;
+          margin-top: 8px;
+        }
+
+        /* Title elements (middle and bottom) */
+        .video-author,
+        .video-stats{
+          font-size: 12px;
+          margin-left: -5px;
+          margin-bottom: 6px;
+          color: rgb(96, 96, 96);
+        }
+
+        /* Grid CSS */
+        .video-grid{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          column-gap: 16px;
+          row-gap: 20px;
+          gap: 22px 8px;
+          padding: 15px;
+          padding-left: 30px;
+          background-color: rgb(249, 249, 249);
+        }
+
+        /*Creating a media query
+        max-width means the CSS will only activate when 
+        the screen is at 600px*/
+        @media (max-width: 850px){
+          /*targeting .video-grid template*/
+          .video-grid{
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+
+        @media (min-width: 851) and (max-width: 999px){
+          .video-grid {
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+        }
+
+        @media (min-width: 1000px ){
+          /*targeting .video-grid template*/
+          .video-grid{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+          }
+        }
+
+        .hamburger-menu{
+            height: 20px;
+            margin-left: 24px;
+            margin-right: 20px;
+        }
+
+        .youtube-logo{
+            height: 18px;
+        }

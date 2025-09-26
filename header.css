@@ -1,0 +1,211 @@
+.header{
+  height: 55px;
+  /*creating into a flexbox*/
+  display: flex;
+  flex-direction: row;
+  /*spreading them out evenly*/
+  justify-content: space-between;
+  background-color: white;
+  /*make sure header stays when scrolling the page*/
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  top: 0px;
+  z-index: 1;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(230, 228, 228);
+}
+
+ .left-section{
+  /*have to put a flex box in a flex box*/
+  display: flex;
+  /*only works with flex*/
+  align-items: center;
+ }
+
+ .middle-section{
+  /*middle section is stretching depending how big or small the screen is*/
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  /*limitting width on how big search bar an stretch*/
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+ }
+
+ .right-section{
+  height: 55px;
+  width: 180px;
+  /*for the items in the right-section*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 24px;
+  margin-left: 29px;
+  flex-shrink: 0;
+ }
+
+ .search-button{
+  height:38px;
+  width: 55px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgrey;
+  border-left: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: rgb(247, 247, 247);
+  cursor: pointer;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1;
+  position: relative;
+ }
+
+ .search-button:active{
+  background-color: rgb(250, 250, 250);
+
+ }
+
+ .search-button:hover{
+  cursor: pointer;
+ }
+
+  .search-button .tooltip,
+  .voice-button .tooltip,
+  .apps-button .tooltip,
+  .upload-button .tooltip,
+  .notifications-button .tooltip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    transition: .01s;
+ }
+
+  .search-button:hover .tooltip,
+  .voice-button:hover .tooltip,
+  .upload-button:hover .tooltip,
+  .apps-button:hover .tooltip,
+  .notifications-button:hover .tooltip{
+  position: absolute;
+  bottom: -48px;
+  background-color: rgb(102, 101, 101);
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 13px;
+  padding: 9px;
+  pointer-events: none;
+  opacity: 1;
+  /*no wrap in the text display*/
+  white-space: nowrap;
+ }
+
+ .search-icon{
+  height: 24px;
+  width: 24px;
+ }
+
+ .voice-button{
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;  
+  border: none;
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ }
+
+ .voice-icon{
+  height: 24px;
+  width: auto;
+  border-radius: 25px;
+ }
+
+ .search-bar{
+  flex: 1;
+  height: 34px;
+  padding-left: 10px;
+  font-size: 14px;
+  /*border shortcut */
+  border: 1px solid lightgrey;
+  /*instead of doing 
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgrey; */
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+ }
+
+ .search-bar::placeholder{
+  font-family: Roboto, Arial;
+  font-size: 14px;
+ }
+
+ .upload-icon{
+  height: 24px;
+  cursor: pointer;
+ }
+
+ .upload-button{
+  border:none;
+  background-color: white;
+  position: relative;
+ }
+
+ .apps-icon{
+  height: 24px;
+  cursor: pointer;;
+ }
+
+  .apps-button{
+  border:none;
+  background-color: white;
+  position: relative;
+ }
+
+ .notifs-icon{
+  height: 24px;
+  cursor: pointer;
+ }
+
+ .notifications-icon-container{
+  position: relative;
+ }
+
+ .notifications-count{
+  font-family: Roboto, Arial;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  background-color: rgb(198, 0, 0);
+  color: white;
+
+ }
+
+.notifications-button{
+  border:none;
+  background-color: white;
+  position: relative;
+ }
+
+ .user-icon{
+  height: 24px;
+  border-radius: 15px;
+ }
