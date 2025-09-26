@@ -5,13 +5,9 @@ For this project I built a responsive front-end clone of YouTube’s homepage us
 ⸻
 
 What I Implemented
+
 	•	Responsive Design → I used media queries to adjust the video grid layout for different screen sizes, making the page mobile-friendly.
 	•	CSS Grid → I structured the video previews in a clean grid layout that dynamically changes from 2 → 3 → 4 columns depending on the screen width.
-
-![Screenshot](grid2.png)
-![Screenshot](grid3.png)
-![Screenshot](grid4.png)
-	
 	•	Nested Flexbox → I used flexbox inside sections like the header, sidebar, and video info to align icons, text, and buttons.
 	•	Positioning (absolute & relative) → I positioned elements like the header, sidebar, and video timestamps to overlay correctly and stay fixed when scrolling.
 	•	Hover Effects & Tooltips → I added hover states for sidebar links, buttons, and tooltips to give the design an interactive feel.
@@ -20,6 +16,7 @@ What I Implemented
 ⸻
 
 Project Structure
+
 	•	youtube.html → The main HTML page
 	•	header.css → Styles for the top navigation bar and search bar
 
