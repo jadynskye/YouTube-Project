@@ -31,6 +31,7 @@ Project Structure
 What I Learned
 
 This project helped me strengthen my skills in:
+
 	•	Combining flexbox and grid layouts for complex UIs
 	•	Managing fixed and absolute positioning for sticky headers and overlays
 	•	Designing responsive web pages with media queries
